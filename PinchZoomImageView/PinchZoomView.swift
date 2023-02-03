@@ -13,16 +13,6 @@ struct PinchZoomView: View {
     @State private var isDragging : Bool = false
     @State private var offset : CGPoint = CGPoint(x: 0, y: 0)
     
-    var drag : some Gesture {
-        DragGesture()
-            .onChanged { gesture in
-                isDragging = true
-            }
-            .onEnded { _ in
-                isDragging = false
-            }
-    }
-    
     var pinch : some Gesture {
         MagnificationGesture()
             .onChanged { value in
@@ -38,17 +28,12 @@ struct PinchZoomView: View {
         //Use rect instead of image for testing.
         //let rect = Rectangle()
         let image = Image("stella")
-        image.frame(width: 300, height: 300)
-            .background(isDragging ? Color.red : Color.blue)
-            .scaleEffect(currentScale * currentScaleFactor)
+        image.scaleEffect(currentScale * currentScaleFactor)
             .gesture(
                 DragGesture()
                     .onChanged({ value in
                         self.offset.x += value.location.x - value.startLocation.x
                         self.offset.y += value.location.y - value.startLocation.y
-                    })
-                    .onEnded({ _ in
-                        
                     })
             )
             .gesture(pinch)
