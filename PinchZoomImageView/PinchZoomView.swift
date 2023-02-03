@@ -12,13 +12,11 @@ struct PinchZoomView: View {
     @State private var currentScaleFactor : CGFloat = 1
     @State private var isDragging : Bool = false
     @State private var offset : CGPoint = CGPoint(x: 0, y: 0)
-    @State private var location : CGPoint = CGPoint(x: 0, y: 0)
     
     var drag : some Gesture {
         DragGesture()
             .onChanged { gesture in
                 isDragging = true
-                self.location = gesture.location
             }
             .onEnded { _ in
                 isDragging = false
