@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E13B0C02297F78F70099F4CE /* PinchZoomImageViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B0C01297F78F70099F4CE /* PinchZoomImageViewApp.swift */; };
-		E13B0C04297F78F70099F4CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B0C03297F78F70099F4CE /* ContentView.swift */; };
+		E13B0C04297F78F70099F4CE /* PinchZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B0C03297F78F70099F4CE /* PinchZoomView.swift */; };
 		E13B0C06297F78F80099F4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C05297F78F80099F4CE /* Assets.xcassets */; };
 		E13B0C09297F78F80099F4CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C08297F78F80099F4CE /* Preview Assets.xcassets */; };
 		E13B0C13297F78F80099F4CE /* PinchZoomImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13B0C12297F78F80099F4CE /* PinchZoomImageViewTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		E13B0BFE297F78F70099F4CE /* PinchZoomImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinchZoomImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13B0C01297F78F70099F4CE /* PinchZoomImageViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomImageViewApp.swift; sourceTree = "<group>"; };
-		E13B0C03297F78F70099F4CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E13B0C03297F78F70099F4CE /* PinchZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomView.swift; sourceTree = "<group>"; };
 		E13B0C05297F78F80099F4CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E13B0C08297F78F80099F4CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E13B0C0E297F78F80099F4CE /* PinchZoomImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchZoomImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,7 @@
 		E13B0C18297F78F80099F4CE /* PinchZoomImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinchZoomImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13B0C1C297F78F80099F4CE /* PinchZoomImageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomImageViewUITests.swift; sourceTree = "<group>"; };
 		E13B0C1E297F78F80099F4CE /* PinchZoomImageViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchZoomImageViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E13B0C2D297F821E0099F4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +95,9 @@
 		E13B0C00297F78F70099F4CE /* PinchZoomImageView */ = {
 			isa = PBXGroup;
 			children = (
+				E13B0C2D297F821E0099F4CE /* Info.plist */,
 				E13B0C01297F78F70099F4CE /* PinchZoomImageViewApp.swift */,
-				E13B0C03297F78F70099F4CE /* ContentView.swift */,
+				E13B0C03297F78F70099F4CE /* PinchZoomView.swift */,
 				E13B0C05297F78F80099F4CE /* Assets.xcassets */,
 				E13B0C07297F78F80099F4CE /* Preview Content */,
 			);
@@ -257,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E13B0C04297F78F70099F4CE /* ContentView.swift in Sources */,
+				E13B0C04297F78F70099F4CE /* PinchZoomView.swift in Sources */,
 				E13B0C02297F78F70099F4CE /* PinchZoomImageViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +422,7 @@
 				DEVELOPMENT_TEAM = 8AN6CGLLC6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PinchZoomImageView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +451,7 @@
 				DEVELOPMENT_TEAM = 8AN6CGLLC6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PinchZoomImageView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

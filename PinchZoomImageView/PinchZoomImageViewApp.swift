@@ -11,7 +11,7 @@ import SwiftUI
 struct PinchZoomImageViewApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PinchZoomView()
         }
     }
 }
